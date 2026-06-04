@@ -29,6 +29,7 @@
 }
 </script>
 <script src="assets/js/site.js" defer></script>
+<script src="assets/js/cart.js" defer></script>
 <script src="assets/js/calculator.js" defer></script>
 </head>
 <body>
@@ -45,12 +46,13 @@
     </button>
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
       <li><a href="learn.html">Learn</a></li>
       <li><a href="library.html">Peptide Library</a></li>
       <li><a href="calculator.html" aria-current="page">Dose Calculator</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="about.html">About</a></li>
-      <li class="nav-cta"><a class="btn btn--primary" href="calculator.html">Open Calculator</a></li>
+      <li class="nav-cta"><a class="btn btn--primary cart-link" href="cart.html">Cart <span class="cart-count is-empty" data-cart-count>0</span></a></li>
     </ul>
   </div>
 </header>
@@ -158,14 +160,14 @@
           <img class="logo" src="assets/img/logo.svg" alt="" width="32" height="32">
           <span>Peptides<b>Easy</b></span>
         </a>
-        <p>Clear, evidence-aware peptide education. For research and informational purposes only.</p>
+        <p>High-purity research peptides and education. For laboratory research use only — not for human consumption.</p>
       </div>
       <div><h4>Learn</h4><ul><li><a href="learn.html">Beginner guide</a></li><li><a href="library.html">Peptide library</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
-      <div><h4>Tools</h4><ul><li><a href="calculator.html">Dose calculator</a></li><li><a href="library.html">Search peptides</a></li></ul></div>
+      <div><h4>Shop</h4><ul><li><a href="shop.html">All products</a></li><li><a href="cart.html">Cart</a></li><li><a href="calculator.html">Dose calculator</a></li></ul></div>
       <div><h4>Site</h4><ul><li><a href="about.html">About</a></li><li><a href="about.html#disclaimer">Disclaimer</a></li></ul></div>
     </div>
     <div class="footer-bottom">
-      <span>© <span data-year>2026</span> Peptides Easy. Educational content only — not medical advice.</span>
+      <span>© <span data-year>2026</span> Peptides Easy. Research use only — not for human consumption.</span>
       <span>Made with care for curious minds.</span>
     </div>
   </div>

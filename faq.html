@@ -26,11 +26,14 @@
     { "@type": "Question", "name": "What is the difference between mcg and mg?", "acceptedAnswer": { "@type": "Answer", "text": "One milligram (mg) equals 1,000 micrograms (mcg). Many peptide doses are described in micrograms because the amounts studied are very small." } },
     { "@type": "Question", "name": "What is bacteriostatic water?", "acceptedAnswer": { "@type": "Answer", "text": "Bacteriostatic water is sterile water that contains a small amount of preservative (typically 0.9% benzyl alcohol) to inhibit the growth of bacteria, allowing a reconstituted vial to be used over a period of time." } },
     { "@type": "Question", "name": "Are peptides legal?", "acceptedAnswer": { "@type": "Answer", "text": "It depends entirely on the specific peptide and your country or region. Many peptides discussed online are research chemicals not approved for human use. Always check your local laws and consult a qualified professional." } },
-    { "@type": "Question", "name": "Does Peptides Easy sell peptides?", "acceptedAnswer": { "@type": "Answer", "text": "No. Peptides Easy is an educational resource only. We do not sell, supply, or recommend purchasing any peptides or related products." } }
+    { "@type": "Question", "name": "Does Peptides Easy sell peptides?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Peptides Easy supplies high-purity (≥ 99%) research peptides and reconstitution supplies for laboratory research use only. They are not sold for human or veterinary consumption." } },
+    { "@type": "Question", "name": "What does 'for research use only' mean?", "acceptedAnswer": { "@type": "Answer", "text": "It means the products are intended solely for in-vitro laboratory research and development by qualified professionals. They are not drugs, supplements, or food, and are not intended to diagnose, treat, cure, or prevent any disease in humans or animals." } },
+    { "@type": "Question", "name": "How fast is shipping?", "acceptedAnswer": { "@type": "Answer", "text": "In-stock orders are typically dispatched within 1–2 business days. Orders over $100 ship free; otherwise a flat shipping rate applies at checkout." } }
   ]
 }
 </script>
 <script src="assets/js/site.js" defer></script>
+<script src="assets/js/cart.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -46,12 +49,13 @@
     </button>
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
       <li><a href="learn.html">Learn</a></li>
       <li><a href="library.html">Peptide Library</a></li>
       <li><a href="calculator.html">Dose Calculator</a></li>
       <li><a href="faq.html" aria-current="page">FAQ</a></li>
       <li><a href="about.html">About</a></li>
-      <li class="nav-cta"><a class="btn btn--primary" href="calculator.html">Open Calculator</a></li>
+      <li class="nav-cta"><a class="btn btn--primary cart-link" href="cart.html">Cart <span class="cart-count is-empty" data-cart-count>0</span></a></li>
     </ul>
   </div>
 </header>
@@ -94,11 +98,19 @@
         </details>
         <details>
           <summary>Does Peptides Easy sell peptides?</summary>
-          <p>No. Peptides Easy is an <strong>educational resource only</strong>. We don't sell, supply, or recommend buying any peptides or related products. Our goal is simply to make the science easier to understand.</p>
+          <p>Yes. We supply <strong>high-purity (≥ 99%) research peptides</strong> and reconstitution supplies through our <a href="shop.html">shop</a> — sold strictly <strong>for laboratory research use only</strong>, not for human or veterinary consumption.</p>
+        </details>
+        <details>
+          <summary>What does "for research use only" mean?</summary>
+          <p>It means our products are intended solely for <em>in-vitro</em> laboratory research by qualified professionals. They are <strong>not</strong> drugs, supplements or food, and are not intended to diagnose, treat, cure or prevent any disease in humans or animals.</p>
+        </details>
+        <details>
+          <summary>How fast is shipping?</summary>
+          <p>In-stock orders are typically dispatched within 1–2 business days. Orders over <strong>$100 ship free</strong>; otherwise a flat rate is shown at checkout.</p>
         </details>
         <details>
           <summary>Is the information here medical advice?</summary>
-          <p>No. Everything on this site is general educational information for research and learning. It is not a substitute for advice from a licensed healthcare professional who knows your individual situation.</p>
+          <p>No. Everything on this site is general educational information for research reference. It is not a substitute for advice from a licensed healthcare professional who knows your individual situation.</p>
         </details>
       </div>
 
@@ -118,14 +130,14 @@
           <img class="logo" src="assets/img/logo.svg" alt="" width="32" height="32">
           <span>Peptides<b>Easy</b></span>
         </a>
-        <p>Clear, evidence-aware peptide education. For research and informational purposes only.</p>
+        <p>High-purity research peptides and education. For laboratory research use only — not for human consumption.</p>
       </div>
       <div><h4>Learn</h4><ul><li><a href="learn.html">Beginner guide</a></li><li><a href="library.html">Peptide library</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
-      <div><h4>Tools</h4><ul><li><a href="calculator.html">Dose calculator</a></li><li><a href="library.html">Search peptides</a></li></ul></div>
+      <div><h4>Shop</h4><ul><li><a href="shop.html">All products</a></li><li><a href="cart.html">Cart</a></li><li><a href="calculator.html">Dose calculator</a></li></ul></div>
       <div><h4>Site</h4><ul><li><a href="about.html">About</a></li><li><a href="about.html#disclaimer">Disclaimer</a></li></ul></div>
     </div>
     <div class="footer-bottom">
-      <span>© <span data-year>2026</span> Peptides Easy. Educational content only — not medical advice.</span>
+      <span>© <span data-year>2026</span> Peptides Easy. Research use only — not for human consumption.</span>
       <span>Made with care for curious minds.</span>
     </div>
   </div>

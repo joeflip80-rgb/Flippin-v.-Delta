@@ -17,6 +17,7 @@
 <link rel="manifest" href="site.webmanifest">
 <link rel="stylesheet" href="assets/css/styles.css">
 <script src="assets/js/site.js" defer></script>
+<script src="assets/js/cart.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -32,12 +33,13 @@
     </button>
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
       <li><a href="learn.html">Learn</a></li>
       <li><a href="library.html">Peptide Library</a></li>
       <li><a href="calculator.html">Dose Calculator</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="about.html" aria-current="page">About</a></li>
-      <li class="nav-cta"><a class="btn btn--primary" href="calculator.html">Open Calculator</a></li>
+      <li class="nav-cta"><a class="btn btn--primary cart-link" href="cart.html">Cart <span class="cart-count is-empty" data-cart-count>0</span></a></li>
     </ul>
   </div>
 </header>
@@ -55,17 +57,17 @@
     <div class="container">
       <article class="prose">
         <h2>Our mission</h2>
-        <p>The internet is full of peptide information that's either impenetrably technical or suspiciously promotional. We aim for a third option: <strong>clear, neutral, and genuinely educational</strong>. We translate the science into plain English, build free tools that make the math obvious, and we don't sell anything — so there's no incentive to overpromise.</p>
+        <p>The internet is full of peptide information that's either impenetrably technical or suspiciously promotional, and a research-supply market that's often opaque about purity. We aim to do both jobs honestly: <strong>supply high-purity research peptides</strong> and <strong>explain the science clearly</strong> — with free tools that make the math obvious and no inflated claims.</p>
 
         <h2>What we are — and aren't</h2>
         <div class="grid grid--2 mt-2">
           <div class="card">
             <h3>✅ We are</h3>
-            <p>An independent educational reference: plain-English explanations, a searchable library, a reconstitution calculator, and guides on reading research critically.</p>
+            <p>A research-peptide supplier and education hub: ≥99% purity products, a searchable library, a reconstitution calculator, and guides on reading research critically.</p>
           </div>
           <div class="card">
             <h3>🚫 We aren't</h3>
-            <p>A store, a clinic, or a source of medical advice. We don't sell peptides, recommend protocols, or tell anyone what to put in their body.</p>
+            <p>A clinic or a source of medical advice. Our products are sold <strong>for laboratory research use only</strong> — not for human or veterinary consumption — and we never recommend protocols or doses.</p>
           </div>
         </div>
 
@@ -80,12 +82,12 @@
         <div class="callout" role="note">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4m0 4h.01M10.3 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.7 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span>
-            <strong>Educational and informational use only.</strong> The content, tools, and calculators on Peptides Easy are provided for general education and research reference. They are <strong>not medical advice</strong> and must not be used to diagnose, treat, or guide the use of any substance in humans or animals.
+            <strong>For laboratory research use only — not for human or veterinary consumption.</strong> All products and content on Peptides Easy are intended solely for <em>in-vitro</em> research and educational reference by qualified professionals. They are <strong>not drugs, supplements, or food</strong>, are <strong>not medical advice</strong>, and are not intended to diagnose, treat, cure, or prevent any disease.
           </span>
         </div>
-        <p class="mt-2">Many peptides referenced on this site are <strong>research chemicals that are not approved for human use</strong>, and their legal status varies by jurisdiction. The reconstitution calculator performs arithmetic on the values you enter; it does not recommend a dose, frequency, or route, and a result does not imply that any use is safe, effective, or legal. Always consult a qualified, licensed healthcare professional and comply with all applicable laws and regulations in your location. You are solely responsible for how you use this information.</p>
+        <p class="mt-2">Many peptides sold and referenced on this site are <strong>research chemicals not approved for human use</strong>, and their legal status varies by jurisdiction. By purchasing, you confirm that you are a qualified researcher and that you will use the products lawfully and solely for legitimate research. The reconstitution calculator performs arithmetic on the values you enter; it does not recommend a dose, frequency, or route, and a result does not imply that any use is safe, effective, or legal. Always comply with all applicable laws and regulations in your location. You are solely responsible for how you use these products and this information.</p>
 
-        <p class="mt-3"><a class="btn btn--primary" href="learn.html">Start learning →</a></p>
+        <p class="mt-3"><a class="btn btn--primary" href="shop.html">Browse the shop →</a></p>
       </article>
     </div>
   </section>
@@ -99,14 +101,14 @@
           <img class="logo" src="assets/img/logo.svg" alt="" width="32" height="32">
           <span>Peptides<b>Easy</b></span>
         </a>
-        <p>Clear, evidence-aware peptide education. For research and informational purposes only.</p>
+        <p>High-purity research peptides and education. For laboratory research use only — not for human consumption.</p>
       </div>
       <div><h4>Learn</h4><ul><li><a href="learn.html">Beginner guide</a></li><li><a href="library.html">Peptide library</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
-      <div><h4>Tools</h4><ul><li><a href="calculator.html">Dose calculator</a></li><li><a href="library.html">Search peptides</a></li></ul></div>
+      <div><h4>Shop</h4><ul><li><a href="shop.html">All products</a></li><li><a href="cart.html">Cart</a></li><li><a href="calculator.html">Dose calculator</a></li></ul></div>
       <div><h4>Site</h4><ul><li><a href="about.html">About</a></li><li><a href="about.html#disclaimer">Disclaimer</a></li></ul></div>
     </div>
     <div class="footer-bottom">
-      <span>© <span data-year>2026</span> Peptides Easy. Educational content only — not medical advice.</span>
+      <span>© <span data-year>2026</span> Peptides Easy. Research use only — not for human consumption.</span>
       <span>Made with care for curious minds.</span>
     </div>
   </div>

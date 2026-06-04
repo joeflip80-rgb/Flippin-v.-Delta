@@ -6,6 +6,11 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://peptides-easy.com/shop.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://peptides-easy.com/learn.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
