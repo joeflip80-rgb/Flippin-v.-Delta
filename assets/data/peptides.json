@@ -1,0 +1,146 @@
+[
+  {
+    "name": "BPC-157",
+    "alias": "Body Protection Compound 157",
+    "category": "Recovery",
+    "summary": "A synthetic peptide derived from a protein found in gastric juice, studied for tissue repair, tendon and ligament healing, and gut health in preclinical models.",
+    "halflife": "~4 hours (estimated)",
+    "research": "Soft-tissue & gut repair models"
+  },
+  {
+    "name": "TB-500",
+    "alias": "Thymosin Beta-4 fragment",
+    "category": "Recovery",
+    "summary": "A synthetic version of a naturally occurring peptide investigated for cell migration, angiogenesis, and recovery of muscle and connective tissue in animal studies.",
+    "halflife": "~2-3 hours (estimated)",
+    "research": "Wound healing & flexibility models"
+  },
+  {
+    "name": "GHK-Cu",
+    "alias": "Copper Peptide",
+    "category": "Skin & Anti-aging",
+    "summary": "A naturally occurring copper-binding tripeptide widely used in cosmetic research for collagen synthesis, skin remodeling, and antioxidant activity.",
+    "halflife": "Topical / short systemic",
+    "research": "Dermatology & cosmetic studies"
+  },
+  {
+    "name": "Ipamorelin",
+    "alias": "NNC 26-0161",
+    "category": "Growth Hormone",
+    "summary": "A selective growth-hormone secretagogue (GHRP) studied for stimulating GH release with minimal effect on cortisol or appetite in preclinical work.",
+    "halflife": "~2 hours",
+    "research": "GH secretagogue studies"
+  },
+  {
+    "name": "CJC-1295",
+    "alias": "with/without DAC",
+    "category": "Growth Hormone",
+    "summary": "A growth-hormone-releasing hormone (GHRH) analog researched for sustained increases in GH and IGF-1 levels, often studied alongside Ipamorelin.",
+    "halflife": "DAC: ~6-8 days; no-DAC: ~30 min",
+    "research": "GHRH analog studies"
+  },
+  {
+    "name": "Sermorelin",
+    "alias": "GRF 1-29",
+    "category": "Growth Hormone",
+    "summary": "A 29-amino-acid GHRH fragment investigated as a research tool for assessing pituitary growth-hormone reserve and GH stimulation.",
+    "halflife": "~10-20 minutes",
+    "research": "Pituitary function studies"
+  },
+  {
+    "name": "Tesamorelin",
+    "alias": "TH9507",
+    "category": "Growth Hormone",
+    "summary": "A stabilized GHRH analog studied clinically for reduction of visceral adipose tissue and metabolic outcomes.",
+    "halflife": "~26-38 minutes",
+    "research": "Visceral fat & metabolic studies"
+  },
+  {
+    "name": "Semaglutide",
+    "alias": "GLP-1 analog",
+    "category": "Metabolic",
+    "summary": "A long-acting glucagon-like peptide-1 (GLP-1) receptor agonist extensively researched for glucose regulation, appetite, and body-weight outcomes.",
+    "halflife": "~7 days",
+    "research": "Metabolic & appetite studies"
+  },
+  {
+    "name": "Tirzepatide",
+    "alias": "GIP/GLP-1 agonist",
+    "category": "Metabolic",
+    "summary": "A dual GIP and GLP-1 receptor agonist studied for combined effects on glucose control and weight regulation.",
+    "halflife": "~5 days",
+    "research": "Dual-incretin metabolic studies"
+  },
+  {
+    "name": "PT-141",
+    "alias": "Bremelanotide",
+    "category": "Other",
+    "summary": "A melanocortin receptor agonist researched for its effects on sexual arousal pathways via the central nervous system.",
+    "halflife": "~2.7 hours",
+    "research": "Melanocortin pathway studies"
+  },
+  {
+    "name": "Melanotan II",
+    "alias": "MT-2",
+    "category": "Other",
+    "summary": "A synthetic melanocortin analog studied in research settings for pigmentation pathways and related signaling.",
+    "halflife": "~1 hour",
+    "research": "Pigmentation pathway studies"
+  },
+  {
+    "name": "Epitalon",
+    "alias": "Epithalon, AEDG",
+    "category": "Longevity",
+    "summary": "A synthetic tetrapeptide investigated in animal and cell models for telomerase activity and circadian/pineal regulation.",
+    "halflife": "Short (minutes)",
+    "research": "Telomere & aging models"
+  },
+  {
+    "name": "Thymosin Alpha-1",
+    "alias": "Tα1",
+    "category": "Immune",
+    "summary": "A peptide derived from the thymus studied for immune modulation and T-cell function in clinical and preclinical research.",
+    "halflife": "~2 hours",
+    "research": "Immune modulation studies"
+  },
+  {
+    "name": "MOTS-c",
+    "alias": "Mitochondrial ORF",
+    "category": "Metabolic",
+    "summary": "A mitochondrial-derived peptide researched for roles in metabolic regulation, insulin sensitivity, and exercise physiology.",
+    "halflife": "Short (estimated)",
+    "research": "Mitochondrial metabolism studies"
+  },
+  {
+    "name": "Selank",
+    "alias": "TP-7",
+    "category": "Nootropic",
+    "summary": "A synthetic analog of the peptide tuftsin studied in animal models for anxiolytic and cognitive-modulating properties.",
+    "halflife": "Short (minutes)",
+    "research": "Anxiety & cognition models"
+  },
+  {
+    "name": "Semax",
+    "alias": "ACTH(4-10) analog",
+    "category": "Nootropic",
+    "summary": "A synthetic peptide derived from ACTH studied for neuroprotective and cognitive effects in research settings, particularly in Russia.",
+    "halflife": "Short (minutes)",
+    "research": "Neuroprotection & cognition models"
+  },
+  {
+    "name": "AOD-9604",
+    "alias": "HGH fragment 176-191",
+    "category": "Metabolic",
+    "summary": "A fragment of human growth hormone investigated for lipolytic (fat-metabolism) activity without the growth effects of full GH.",
+    "halflife": "Short (estimated)",
+    "research": "Lipolysis & metabolic studies"
+  },
+  {
+    "name": "GHRP-6",
+    "alias": "Growth Hormone Releasing Peptide-6",
+    "category": "Growth Hormone",
+    "summary": "An early growth-hormone secretagogue researched for GH release; notable for also stimulating appetite via ghrelin pathways.",
+    "halflife": "~15-60 minutes",
+    "research": "GH secretagogue & appetite studies"
+  }
+]

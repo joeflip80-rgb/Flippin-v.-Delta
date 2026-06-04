@@ -1,0 +1,12 @@
+{
+  "name": "Peptides Easy",
+  "short_name": "PeptidesEasy",
+  "description": "Clear, evidence-aware peptide education: a plain-English library, a reconstitution calculator and beginner guides.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f7fafc",
+  "theme_color": "#0d9488",
+  "icons": [
+    { "src": "/assets/img/logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
