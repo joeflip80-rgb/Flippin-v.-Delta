@@ -3,6 +3,16 @@
 # Default document
 DirectoryIndex index.html
 
+# Force correct MIME types (some shared hosts get these wrong, which
+# combined with nosniff can stop CSS/JS/SVG from loading)
+<IfModule mod_mime.c>
+  AddType text/css .css
+  AddType application/javascript .js
+  AddType image/svg+xml .svg
+  AddType application/json .json
+  AddType application/manifest+json .webmanifest
+</IfModule>
+
 # Custom error page
 ErrorDocument 404 /404.html
 
