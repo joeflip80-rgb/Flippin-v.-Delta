@@ -25,12 +25,12 @@
       grid.innerHTML = featured.map(function (p) {
         return (
           '<article class="product">' +
-            '<div class="product__media" aria-hidden="true"><span>' + esc(initials(p.name)) + "</span>" +
+            '<a class="product__media" aria-label="' + esc(p.name) + '" href="product.html?sku=' + encodeURIComponent(p.sku) + '"><span aria-hidden="true">' + esc(initials(p.name)) + "</span>" +
               (p.tag ? '<span class="product__tag">' + esc(p.tag) + "</span>" : "") +
-            "</div>" +
+            "</a>" +
             '<div class="product__body">' +
               '<div class="product__cat">' + esc(p.category) + "</div>" +
-              "<h3>" + esc(p.name) + "</h3>" +
+              '<h3><a href="product.html?sku=' + encodeURIComponent(p.sku) + '">' + esc(p.name) + "</a></h3>" +
               '<p class="alias">' + esc(p.size) + " · " + esc(p.purity) + "</p>" +
               '<div class="product__foot">' +
                 '<span class="price">' + money(p.price) + "</span>" +

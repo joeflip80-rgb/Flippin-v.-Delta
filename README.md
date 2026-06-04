@@ -24,24 +24,65 @@ HTML, CSS and vanilla JavaScript (no build step, no framework, no dependencies).
 - `sitemap.xml`, `robots.txt`, `site.webmanifest`.
 - System-font stack, deferred scripts, preloaded CSS, responsive + dark-mode, reduced-motion and accessibility (skip links, ARIA, focus styles).
 
+## Store / commerce
+
+This is a **research-peptide storefront** ("for laboratory research use only — not
+for human consumption"). The cart is client-side; **checkout needs a payment
+backend** before it can take real money.
+
+- **`shop.html`** — product grid with search, category filter and sort (`assets/js/shop.js`).
+- **`product.html?sku=…`** — dynamic product detail page driven by the SKU in the
+  query string (`assets/js/product.js`); injects `Product` JSON-LD.
+- **`cart.html` + `assets/js/cart.js`** — `localStorage` cart, nav badge, quantity
+  controls, free-shipping logic, add-to-cart toast. Checkout is a **demo** until a
+  provider is connected.
+- **`assets/data/products.json`** — the catalog. Each product:
+
+```json
+{
+  "sku": "BPC157-5", "name": "BPC-157", "alias": "Body Protection Compound 157",
+  "category": "Recovery", "size": "5 mg / vial", "purity": "≥ 99%",
+  "price": 39.99, "tag": "Bestseller", "stock": true,
+  "summary": "Short, neutral, research-context description…"
+}
+```
+
+### Going live — replace these placeholders
+
+- **Catalog:** real products, prices, purity, SKUs and stock in `products.json`.
+- **Policies:** `contact.html`, `shipping.html`, `returns.html`, `terms.html`,
+  `privacy.html` contain `[bracketed]` placeholders — fill in your business
+  details and have them professionally reviewed.
+- **Checkout:** connect Stripe / Snipcart / Shopify (or another provider) to the
+  "Proceed to checkout" button in `cart.js`.
+- **Contact form:** set the `action` in `contact.html` to a form service or backend.
+
 ## Project structure
 
 ```
 .
-├── index.html            # Home
+├── index.html            # Home (storefront)
+├── shop.html             # Product grid
+├── product.html          # Product detail (?sku=)
+├── cart.html             # Cart + demo checkout
 ├── learn.html            # Beginner guide
 ├── library.html          # Searchable peptide library
 ├── calculator.html       # Reconstitution calculator
 ├── faq.html              # FAQ (+ FAQ schema)
 ├── about.html            # About + full disclaimer
+├── contact.html, shipping.html, returns.html, terms.html, privacy.html
 ├── 404.html
 ├── sitemap.xml, robots.txt, site.webmanifest, CNAME
 └── assets/
     ├── css/styles.css    # Design system
     ├── js/site.js        # Shared nav + footer year
+    ├── js/cart.js        # Cart (localStorage) + badges
+    ├── js/shop.js        # Shop search/filter/sort
+    ├── js/product.js     # Product detail page
+    ├── js/featured.js    # Homepage featured products
     ├── js/library.js     # Library search/filter
     ├── js/calculator.js  # Calculator logic
-    ├── data/peptides.json
+    ├── data/products.json, data/peptides.json
     └── img/logo.svg
 ```
 
