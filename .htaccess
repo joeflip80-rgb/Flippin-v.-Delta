@@ -1,0 +1,44 @@
+# Peptides Easy — Apache config for cPanel/shared hosting
+
+# Default document
+DirectoryIndex index.html
+
+# Custom error page
+ErrorDocument 404 /404.html
+
+# Force HTTPS (you have an SSL cert installed)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# Gzip compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml \
+    application/javascript application/json application/xml \
+    image/svg+xml application/manifest+json
+</IfModule>
+
+# Cache static assets (HTML stays short so updates show quickly)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType application/json "access plus 1 day"
+  ExpiresByType application/manifest+json "access plus 1 week"
+  ExpiresByType text/html "access plus 1 hour"
+</IfModule>
+
+# Security headers
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Don't serve markdown source files
+<FilesMatch "\.md$">
+  Require all denied
+</FilesMatch>
