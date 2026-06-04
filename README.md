@@ -53,8 +53,17 @@ backend** before it can take real money.
 - **Policies:** `contact.html`, `shipping.html`, `returns.html`, `terms.html`,
   `privacy.html` contain `[bracketed]` placeholders — fill in your business
   details and have them professionally reviewed.
-- **Checkout:** connect Stripe / Snipcart / Shopify (or another provider) to the
-  "Proceed to checkout" button in `cart.js`.
+- **Checkout (PayPal):** the cart uses PayPal Smart Buttons (`assets/js/checkout.js`).
+  In `cart.html`, set `window.PE_PAYPAL_CLIENT_ID` to your **live PayPal client ID**:
+
+  ```html
+  <script>window.PE_PAYPAL_CLIENT_ID = "YOUR_PAYPAL_CLIENT_ID"; window.PE_PAYPAL_CURRENCY = "USD";</script>
+  ```
+
+  Until that's set, the cart shows a disabled button and a setup notice. The order
+  (items, subtotal, shipping) is built from the cart automatically. **For production,
+  also verify and capture orders server-side** — client-only capture can be tampered
+  with. Configure shipping/free-shipping in `shippingFor()` (`cart.js`).
 - **Contact form:** set the `action` in `contact.html` to a form service or backend.
 
 ## Project structure

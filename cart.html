@@ -13,6 +13,9 @@
 <link rel="stylesheet" href="assets/css/styles.css">
 <script src="assets/js/site.js" defer></script>
 <script src="assets/js/cart.js" defer></script>
+<!-- TODO: replace with your live PayPal client ID to enable real checkout -->
+<script>window.PE_PAYPAL_CLIENT_ID = "YOUR_PAYPAL_CLIENT_ID"; window.PE_PAYPAL_CURRENCY = "USD";</script>
+<script src="assets/js/checkout.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -54,7 +57,7 @@
 
       <div class="callout mt-3" role="note">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4m0 4h.01M10.3 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.7 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span><strong>Demo checkout.</strong> This cart runs entirely in your browser. To accept real orders, connect a payment provider (e.g. Stripe or Shopify) and an order backend. Products are sold for laboratory research use only — not for human consumption.</span>
+        <span><strong>Checkout via PayPal.</strong> Add your PayPal client ID in <code>cart.html</code> to take live payments (see the README). For production, also verify and capture orders on a server. Products are sold for laboratory research use only — not for human consumption.</span>
       </div>
     </div>
   </section>

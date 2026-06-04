@@ -42,9 +42,16 @@
     write(cart);
   }
   function remove(sku) { setQty(sku, 0); }
+  function clear() { localStorage.removeItem(KEY); updateBadges(); renderCart(); }
+
+  // Shipping rule, shared with checkout
+  function shippingFor(sub) { return (sub >= 100 || sub === 0) ? 0 : 9.99; }
 
   // Expose for other scripts
-  window.PECart = { add: add, read: read, setQty: setQty, remove: remove, count: count, total: total };
+  window.PECart = {
+    add: add, read: read, setQty: setQty, remove: remove, clear: clear,
+    count: count, total: total, shippingFor: shippingFor, flash: function (m) { flash(m); }
+  };
 
   /* ---- Badges ---- */
   function updateBadges() {
@@ -96,6 +103,7 @@
           "<p>Your cart is empty.</p>" +
           '<a class="btn btn--primary mt-2" href="shop.html">Browse the shop →</a>' +
         "</div>";
+      document.dispatchEvent(new CustomEvent("cart:rendered"));
       return;
     }
 
@@ -117,7 +125,7 @@
     }).join("");
 
     var sub = total(cart);
-    var shipping = sub >= 100 || sub === 0 ? 0 : 9.99;
+    var shipping = shippingFor(sub);
     root.innerHTML =
       '<div class="cart-list">' + rows + "</div>" +
       '<aside class="cart-summary">' +
@@ -126,9 +134,11 @@
         '<div class="result__row"><span>Shipping</span><b>' + (shipping === 0 ? "Free" : money(shipping)) + "</b></div>" +
         '<div class="result__row" style="font-size:1.15rem"><span>Total</span><b>' + money(sub + shipping) + "</b></div>" +
         (sub < 100 ? '<p class="hint mt-2" style="color:var(--muted)">Add ' + money(100 - sub) + " more for free shipping.</p>" : "") +
+        '<div id="paypal-buttons" class="mt-2"></div>' +
         '<button class="btn btn--primary btn--block mt-2" id="checkout-btn">Proceed to checkout</button>' +
         '<a class="btn btn--ghost btn--block mt-1" href="shop.html">Continue shopping</a>' +
       "</aside>";
+    document.dispatchEvent(new CustomEvent("cart:rendered"));
   }
 
   function esc(s) {
